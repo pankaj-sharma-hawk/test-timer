@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "392925442438",
+    "project_id": "authenticationtest-ff",
+    "storage_bucket": "authenticationtest-ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392925442438:android:f714a8ae8dd920a4bfbc07",
+        "android_client_info": {
+          "package_name": "com.mycompany.authenticationtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "392925442438-k8mi95bk966i679roefor7guhge5bcai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC-HV3sfW5zd-AashFYW6_f8t677JgLt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "392925442438-k8mi95bk966i679roefor7guhge5bcai.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "392925442438-sg112ggv1p2kiu0ia32buc5sjfa3ljup.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.authenticationtest"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
