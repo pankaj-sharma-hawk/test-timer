@@ -17,36 +17,39 @@ class HomePageWidget extends StatefulWidget {
 }
 
 class _HomePageWidgetState extends State<HomePageWidget> {
+  TextEditingController? contentAreaController;
+
+  TextEditingController? emailFieldController;
+
+  TextEditingController? nameFieldController;
+
   late final StopWatchTimer timerController;
   late String timerValue;
   late int timerMilliseconds;
-  TextEditingController? contentAreaController;
-  TextEditingController? emailFieldController;
-  TextEditingController? nameFieldController;
   final formKey = GlobalKey<FormState>();
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    timerMilliseconds = 142;
+    timerMilliseconds = 60000;
     timerValue = StopWatchTimer.getDisplayTime(
       0,
       hours: false,
-      minute: true,
+      minute: false,
       second: true,
       milliSecond: false,
     );
     timerController = StopWatchTimer(
       mode: StopWatchMode.countDown,
-      presetMillisecond: 142,
+      presetMillisecond: 60000,
       onChange: (value) {
         setState(() {
           timerMilliseconds = value;
           timerValue = StopWatchTimer.getDisplayTime(
             value,
             hours: false,
-            minute: true,
+            minute: false,
             second: true,
             milliSecond: false,
           );
@@ -148,6 +151,26 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               topRight: Radius.circular(4.0),
                             ),
                           ),
+                          errorBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Color(0x00000000),
+                              width: 1,
+                            ),
+                            borderRadius: const BorderRadius.only(
+                              topLeft: Radius.circular(4.0),
+                              topRight: Radius.circular(4.0),
+                            ),
+                          ),
+                          focusedErrorBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Color(0x00000000),
+                              width: 1,
+                            ),
+                            borderRadius: const BorderRadius.only(
+                              topLeft: Radius.circular(4.0),
+                              topRight: Radius.circular(4.0),
+                            ),
+                          ),
                         ),
                         style: FlutterFlowTheme.of(context).bodyText1,
                       ),
@@ -175,6 +198,26 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color(0xFF333030),
+                              width: 1,
+                            ),
+                            borderRadius: const BorderRadius.only(
+                              topLeft: Radius.circular(4.0),
+                              topRight: Radius.circular(4.0),
+                            ),
+                          ),
+                          errorBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Color(0x00000000),
+                              width: 1,
+                            ),
+                            borderRadius: const BorderRadius.only(
+                              topLeft: Radius.circular(4.0),
+                              topRight: Radius.circular(4.0),
+                            ),
+                          ),
+                          focusedErrorBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Color(0x00000000),
                               width: 1,
                             ),
                             borderRadius: const BorderRadius.only(
@@ -210,6 +253,26 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color(0xFF333030),
+                              width: 1,
+                            ),
+                            borderRadius: const BorderRadius.only(
+                              topLeft: Radius.circular(4.0),
+                              topRight: Radius.circular(4.0),
+                            ),
+                          ),
+                          errorBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Color(0x00000000),
+                              width: 1,
+                            ),
+                            borderRadius: const BorderRadius.only(
+                              topLeft: Radius.circular(4.0),
+                              topRight: Radius.circular(4.0),
+                            ),
+                          ),
+                          focusedErrorBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Color(0x00000000),
                               width: 1,
                             ),
                             borderRadius: const BorderRadius.only(

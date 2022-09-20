@@ -18,6 +18,7 @@ class PhoneNumberPageWidget extends StatefulWidget {
 class _PhoneNumberPageWidgetState extends State<PhoneNumberPageWidget>
     with TickerProviderStateMixin {
   TextEditingController? phoneNumberController;
+
   final scaffoldKey = GlobalKey<ScaffoldState>();
   final animationsMap = {
     'textOnPageLoadAnimation': AnimationInfo(
@@ -119,6 +120,20 @@ class _PhoneNumberPageWidgetState extends State<PhoneNumberPageWidget>
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(
                     color: FlutterFlowTheme.of(context).primaryBackground,
+                    width: 2,
+                  ),
+                  borderRadius: BorderRadius.circular(40),
+                ),
+                errorBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Color(0x00000000),
+                    width: 2,
+                  ),
+                  borderRadius: BorderRadius.circular(40),
+                ),
+                focusedErrorBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Color(0x00000000),
                     width: 2,
                   ),
                   borderRadius: BorderRadius.circular(40),

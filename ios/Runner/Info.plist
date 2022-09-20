@@ -29,16 +29,16 @@
             <key>CFBundleURLSchemes</key>
             <array>
                 <string>com.googleusercontent.apps.392925442438-sg112ggv1p2kiu0ia32buc5sjfa3ljup</string>
-                <string>fb359083029686895</string>
+                <string>fbf3c9b98e9101e49ce0e150ca2680b9c5</string>
             </array>
         </dict>
 
     </array>
 
     <key>FacebookAppID</key>
-    <string>359083029686895</string>
+    <string>f3c9b98e9101e49ce0e150ca2680b9c5</string>
     <key>FacebookDisplayName</key>
-    <string>AuthenticationTest</string>
+    <string>TestFFLogin</string>
 
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
